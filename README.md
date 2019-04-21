@@ -1,2 +1,6 @@
 # dubbo
-https://www.jianshu.com/p/cc983c8dc47a
+## demo地址
+https://gitee.com/lianup/springboot-dubbo
+
+
+C:\Users\anjie\Downloads\通过Jmeter对Dubbo接口进行接口及性能测试系列视频课程 (1)

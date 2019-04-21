@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans  
+        http://www.springframework.org/schema/beans/spring-beans.xsd  
+        http://code.alibabatech.com/schema/dubbo  
+        http://code.alibabatech.com/schema/dubbo/dubbo.xsd 
+        ">
+    <!--被测应用名称-->
+    <dubbo:application name="hello-test" />
+    <!-- 注册地址 -->
+    <dubbo:registry address="47.98.132.196:2181" protocol="zookeeper"/>
+    <!-- 接口的位置 -->
+    <dubbo:reference interface="com.lhx.service.SayHelloToClient"
+                   id="demoService" />
+    <dubbo:reference interface="com.dalaoyang.dubbo.HelloService"
+                     id="helloService" version="1.0.0"/>
+
+</beans>
